@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
+	font-family: sans-serif;
+	background-color: #F1EDEC;
+	} body::-webkit-scrollbar{
+		width: 8px;
+		height: 8px;
+		display: none;
+	}body::-webkit-scrollbar-thumb{
+       width: 8px;
+       height: 8px;
+       background-color: red;
+       border-radius:20px;
+	}
+	
+
+	@media only screen and (min-device-width: 1081px){
+	header{
+		width: 100%;
+		height: 50px;
+		position: fixed;
+		padding: 10px;
+		top: 0;
+		background-color: #000;
+		display: flex;
+		z-index: 10;
+	} header .logo{
+         width: 200px;
+		 height: 75px;
+		 margin-top: -10px;
+	}  header .icono-menu{
+		font-size: 40px;
+		color: red;
+		margin-top: 10px;
+		margin-left: 80%;
+		transition: color 1s;
+	} header .icono-menu:hover{
+       color: white;
+       cursor: pointer;
+	}
+
+
+	/*****BANNER **/
+
+	.banner{
+		width: 100%;
+		height: 450px;
+		background-image: url(../imagenes/banner5.jpg);
+		background-size: 100%;
+		transition: filter 1s;
+		position: top;
+		filter: brightness(0.4);
+	} .banner:hover{
+			filter: brightness(0.3);
+	} .texto-banner{
+		width: 30%;
+		height: auto;
+		position: absolute;
+		margin-top: -300px;
+		margin-left: 5%;
+		border: 5px solid red;
+		background:none;
+		border-radius: 20px;
+		padding: 15px;
+	} .texto-banner h2{
+        text-align: center;
+        color: #FFF;
+	} .texto-banner p{
+		color: white;
+		display: block;
+		width: 90%;
+		margin:0 auto;
+	} .btn-descarga-app{
+		width: 20%;
+		padding: 10px;
+		margin-top: -150px;
+		margin-left: 10%;
+		color: white;
+		background-color: red;
+		text-decoration: none;
+		border-radius:10px;
+		position: absolute;
+		text-align: center;
+		transition: background-color 1s, color 1s;
+	} .btn-descarga-app:hover{
+        background-color: #FFF;
+        color: red;
+	}
+
+
+	/**** menu alimentos ***/
+
+
+	section{
+		width: 80%;
+		height: auto;
+		margin:0 auto;
+		margin-bottom: 50px;
+	} section{
+		width: 80%;
+		height: auto;
+		margin:0 auto;
+	} section h2{
+		text-align: center;
+		color: red;
+		font-size: 25px;
+	}
+	
+	section .cont-menu{
+		width: 100%;
+		height: auto;
+		justify-content: space-between;
+		display: flex;
+		flex-wrap: wrap;
+	} section .cont-menu .comida{
+         width: 30%;
+         height: auto;
+         background-color:#FFF;
+         margin-top: 20px;
+         padding-bottom: 20px;
+         -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+	} section .cont-menu .comida img{
+       width: 100%;
+       height: 250px;
+	} section .cont-menu .comida h2{
+		font-size: 25px;
+		color: #333;
+		text-align: center;
+	} section .cont-menu .comida .ver-menu{
+       width: 80%;
+       padding: 15px 10px;
+       background-color: red;
+       color: white;
+       outline: none;
+       display: block;
+       margin:0 auto;
+       border:none;
+	   border-radius:10px;
+	   transition: background-color 1s, border 1s, color 1s;
+	} section .cont-menu .comida .ver-menu:hover{
+		  background-color: white;
+		  border: 2px solid red;
+		  color: red;
+		  cursor: pointer;
+	}
+
+	/**** MAPA ****/
+
+	.mapa{
+		width: 100%;
+		height: 450px;
+	
+	} .title-mapa{
+		text-align: center;
+		color: red;
+	}
+/*****FOOOTER ***/
+
+footer{
+	width: 100%;
+	height: 100px;
+	margin-top:-15px;
+	color: white;
+	background-color: red;
+} footer p{
+   text-align: center;
+   line-height: 100px;
+   font-size: 30px;
+   margin: 0;
+}
+
+	/***** CSS ALERT BIENVENIDA ***/
+.title-bienvenida{
+	font-size: 30px;
+	color: #FFF;
+}
+	.icono-alert{
+		width: 50px;
+		height: 50px;
+	}
+
+	/****CSS ALERTS MENU**/
+
+	.title-menu-comida{
+		color:red;
+	} .menu-alert{
+		color: #333;
+		list-style: none;
+		
+	} .menu-alert li{
+       margin-bottom: 20px;
+	}
+
+
+}
